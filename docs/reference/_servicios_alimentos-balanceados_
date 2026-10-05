@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="es-PY">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Alimentos balanceados | Agroveterinaria</title>
+  <meta name="description" content="Consultá por alimentos balanceados para animales, disponibilidad y presentaciones.">
+  <link rel="canonical" href="https://agroveterinaria.com.py/servicios/alimentos-balanceados/">
+  <style>
+:root {
+  --bg: #F5F4F1;
+  --surface: #FFFFFF;
+  --text: #1A1815;
+  --muted: #63605A;
+  --accent: #C2410C;
+  --accent-soft: #FBE9E0;
+  --dark: #22201C;
+  --border: #DEDAD3;
+  --wa: #25D366;
+  --shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px rgba(0,0,0,.06);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+.container { width: min(1280px, 100% - 32px); margin: 0 auto; }
+.eyebrow { color: var(--accent); font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+h1, h2, h3 { font-family: Archivo, Inter, sans-serif; line-height: 1.05; letter-spacing: 0; margin: 0; }
+h1 { font-size: clamp(42px, 10vw, 76px); max-width: 880px; }
+h2 { font-size: clamp(32px, 7vw, 48px); }
+h3 { font-size: clamp(20px, 4vw, 26px); }
+p { margin: 0; color: var(--muted); }
+.lead { font-size: clamp(18px, 3vw, 20px); max-width: 720px; }
+.btn {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 14px;
+  padding: 13px 18px;
+  text-decoration: none;
+  font-weight: 800;
+  border: 1px solid transparent;
+}
+.btn-primary { background: var(--wa); color: #052914; }
+.btn-secondary { background: var(--surface); color: var(--text); border-color: var(--border); }
+.btn-accent { background: var(--accent); color: white; }
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(245,244,241,.94);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+.nav {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.brand { font-weight: 900; text-decoration: none; font-size: 1.05rem; }
+.nav-links { display: none; gap: 18px; align-items: center; }
+.nav-links a { text-decoration: none; color: var(--muted); font-weight: 700; }
+.hero {
+  min-height: 88vh;
+  display: grid;
+  align-items: end;
+  background:
+    linear-gradient(180deg, rgba(34,32,28,.22), rgba(34,32,28,.74)),
+    radial-gradient(circle at 82% 16%, rgba(194,65,12,.28), transparent 32%),
+    linear-gradient(135deg, #6f5a3d, #23201b 70%);
+  color: white;
+  padding: 96px 0 0;
+}
+.hero p { color: rgba(255,255,255,.84); }
+.hero-panel {
+  width: min(980px, 100%);
+  background: rgba(255,255,255,.94);
+  color: var(--text);
+  border-radius: 16px 16px 0 0;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  transform: translateY(40px);
+}
+.hero-panel p { color: var(--muted); }
+.hero-actions, .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+.trust {
+  background: var(--dark);
+  color: white;
+  padding: 72px 0 28px;
+}
+.trust-grid, .service-grid, .principles, .coverage-grid {
+  display: grid;
+  gap: 16px;
+}
+.trust-item, .card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+.trust-item { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.16); }
+.trust-item p { color: rgba(255,255,255,.72); }
+section { padding: 84px 0; }
+.section-head { display: grid; gap: 12px; margin-bottom: 28px; }
+.service-card { min-height: 230px; display: flex; flex-direction: column; justify-content: space-between; }
+.icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 900;
+}
+.band {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: var(--accent);
+  color: white;
+  padding: 64px 0;
+}
+.band p { color: rgba(255,255,255,.86); }
+.step {
+  display: grid;
+  gap: 10px;
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+}
+.step-num { font-family: Archivo, sans-serif; color: var(--accent); font-size: 2rem; font-weight: 900; }
+.split { display: grid; gap: 32px; align-items: start; }
+.form {
+  display: grid;
+  gap: 12px;
+}
+label { display: grid; gap: 6px; font-weight: 800; }
+input, textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 13px 14px;
+  font: inherit;
+}
+.hidden-field { position: absolute; left: -9999px; }
+.footer { background: var(--dark); color: white; padding: 36px 0 110px; }
+.footer p { color: rgba(255,255,255,.7); }
+.fab {
+  position: fixed;
+  right: 16px;
+  bottom: 88px;
+  z-index: 40;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--wa);
+  color: #052914;
+  font-weight: 900;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+}
+.mobile-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 35;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  padding: 10px 12px;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+.cookie {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: 78px;
+  z-index: 50;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 14px;
+}
+.thanks { min-height: 100vh; display: grid; align-content: center; gap: 18px; width: min(720px, 100% - 32px); margin: 0 auto; }
+@media (min-width: 640px) {
+  .trust-grid, .service-grid, .principles, .coverage-grid { grid-template-columns: repeat(2, 1fr); }
+  .cookie { left: auto; width: 420px; }
+}
+@media (min-width: 1024px) {
+  body { padding-bottom: 0; }
+  .nav-links { display: flex; }
+  .hero-panel { padding: 34px; }
+  .service-grid { grid-template-columns: repeat(3, 1fr); }
+  .trust-grid, .coverage-grid { grid-template-columns: repeat(4, 1fr); }
+  .principles { grid-template-columns: repeat(3, 1fr); }
+  .split { grid-template-columns: 1fr 440px; }
+  .mobile-bar { display: none; }
+  .fab { bottom: 16px; }
+}
+@media (min-width: 1280px) {
+  .container { width: min(1280px, 100% - 48px); }
+}
+
+</style>
+</head>
+<body>
+  <header class="site-header"><div class="container nav"><a class="brand" href="/">Agroveterinaria</a><a class="btn btn-primary" data-wa data-wa-message="Hola, quiero consultar por alimentos balanceados" href="#">Escribinos</a></div></header>
+  <main>
+    <section>
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Servicio</p>
+          <h1>Alimentos balanceados</h1>
+          <p class="lead">Pedí información sobre alimentos para mascotas y animales de producción. Confirmamos marca, presentación y disponibilidad cuando el local tenga los datos definitivos.</p>
+          <div class="actions"><a class="btn btn-primary" data-wa data-wa-message="Hola, quiero consultar por alimentos balanceados" href="#">Consultar por WhatsApp</a></div>
+        </div>
+        <div class="card"><h2>Para responder mejor</h2><p>Indicá especie, edad aproximada, peso y si buscás mantenimiento, crecimiento, trabajo, producción o una dieta específica indicada por profesional.</p></div>
+      </div>
+    </section>
+    <section class="band"><div class="container"><h2>Consultá antes de pasar</h2><p>La disponibilidad puede cambiar. WhatsApp ayuda a confirmar presentación y precio antes de moverte.</p></div></section>
+  </main>
+  <a class="fab" data-wa data-wa-message="Hola, quiero consultar por alimentos balanceados" aria-label="Escribinos por WhatsApp" href="#">WA</a>
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>

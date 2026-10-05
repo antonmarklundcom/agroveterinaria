@@ -1,0 +1,24 @@
+{
+  "task_date": "2026-10-05",
+  "hard_cap_credits": 50,
+  "model_catalog": "gpt_image_2_5 / GPT Image 2.5; variant sunburst and quality medium confirmed by models_get",
+  "initial_search": "The combined name query returned no items; exact catalog entry confirmed Sunburst variant.",
+  "jobs": [
+    {"job_id":"e85fdf10-6165-420c-9d57-8fb10d30165e","index":1,"asset":"campo","count":1,"model":"gpt_image_2_5","variant":"sunburst","quality":"medium","resolution":"1k","aspect_ratio":"3:2","estimated_credits":0.5,"actual_job_debit":null,"status":"completed"},
+    {"job_id":"cdc0f18e-3064-47b4-b170-9a5d3c0c1dc5","index":2,"asset":"mascotas","count":1,"model":"gpt_image_2_5","variant":"sunburst","quality":"medium","resolution":"1k","aspect_ratio":"3:2","estimated_credits":0.5,"actual_job_debit":null,"status":"completed"}
+  ],
+  "failed_billable_jobs": 0,
+  "retries": 0,
+  "estimated_total_credits": 1,
+  "balance_before": 5706.5,
+  "balance_after": 5705.5,
+  "observed_balance_delta": 1,
+  "actual_billing_note": "The connector does not expose per-job invoices/debits. An observed balance decrease of 1 matches the estimated total; account activity outside this task cannot be independently excluded.",
+  "remaining_task_budget_by_estimate": 49,
+  "remaining_task_budget_by_observed_delta": 49,
+  "purchases_or_subscription_changes": false,
+  "more_generation_planned": false,
+  "usage": "Illustrative animal/rural scenes, labeled as AI illustrations. Not proof of real clients, premises, stock, products or certifications.",
+  "optimized_widths": [480,800,1024],
+  "optimized_webp_bytes": {"campo":[39744,88452,124202],"mascotas":[16942,33948,46932]}
+}
