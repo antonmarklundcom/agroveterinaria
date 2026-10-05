@@ -1,7 +1,0 @@
-Lista de productos para consultar
-
-1. Vacunas para ganado | Producción · bovinos
-<img src=x onerror="window.injected=true"> — Cantidad/presentación: 2 unidades (prueba)
-
-A confirmar con el proveedor: presentación, disponibilidad, precio y condiciones.
-Esta lista no es un pedido ni una cotización.
