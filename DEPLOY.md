@@ -4,17 +4,17 @@
 
 Bygg med `npm run build`. `public/` innehåller HTML, CSS, JS, SVG, sex WebP-varianter, robots.txt, sitemap.xml och `.htaccess`. Det går att lägga på en statisk Apache/LiteSpeed-host efter driftgenomgång; ingen Node-process krävs.
 
-Paketet är en **granskningsversion**. Ingen automatisk deploy kopplas till GitHub. Draft-PR ska inte mergas eller laddas upp till Hostinger inom detta uppdrag.
+Paketet är en **granskningsversion**. Ingen automatisk deploy kopplas till GitHub. PR:en lämnas som vanlig, öppen PR så att ägaren kan mergea enligt sin senare instruktion. Agenten mergear inte och laddar inte upp till Hostinger inom detta uppdrag.
 
 ## Rangordnade beslut före publicering
 
-1. Bekräfta verksamhetsmodellen: egen butik/leverantör, förmedling eller oberoende information. Identifiera juridiskt/operativt ansvarig och vilka kategorier denne faktiskt hanterar. Ändra copy och eventuell organisationsschema först efter dokumenterat stöd.
+1. Verksamhetsmodellen är bekräftad av ägaren som leadgenerering åt Agrovet. Identifiera juridiskt/operativt ansvarig, exakt mottagande verksamhet och vilka kategorier denne faktiskt hanterar. Ändra eventuell organisationsschema först efter dokumenterat stöd.
 2. Bekräfta godkänd WhatsApp/telefon och exakt mottagare. Varken live-platshållaren eller recon-dokumentets föreslagna stage-1-nummer är godkända. Ingen av dem finns i releasepaketet.
 3. Läsande inventering av befintlig Hostinger-installation och privat PHP/CRM-källa behövs. Ta backup av filer och konfiguration, lista verkliga endpoints/redirects och testa CRM mot testmottagare. Återanvänd verifierad VenderCRM-anslutning; skapa inte ett nytt CRM. Ersätt inte en fungerande serverintegration med detta statiska paket utan jämförelse.
 4. Om mottagarflöde ska aktiveras: verifiera servervalidering, rimliga fältgränser, same-origin/CSRF där relevant, rate limiting/spam, timeout, säkra fel, privata loggar och integritetstext. Lägg hemligheter utanför webbroten. Testa syntetiskt innan ett riktigt lead skickas.
 5. Bekräfta eventuella RUC, adress, öppettider, täckning, leverans, betalning, registreringar och produktkatalog. Publicera bara verifierade fakta. Bilderna är illustrativa, inga egna butik-/lagerfoton.
 6. Ägargranska spanskan och medicinska innehållsgränser. Inga doser, diagnoser, terapier, produktgodkännanden eller uppfunna habiliteringar finns i paketet.
-7. Besluta uttryckligen om indexering när affärsroll/kontakt är klar. Nu behålls live-lägets `noindex,nofollow`. Robots tillåter hämtning så att direktivet går att läsa. Sitemapen inventerar kanoniska adresser men innebär ingen indexeringsgaranti.
+7. Besluta uttryckligen om indexering när operatör/kontakt är klar. Nu behålls live-lägets `noindex,nofollow`. Robots tillåter hämtning så att direktivet går att läsa. Sitemapen inventerar kanoniska adresser men innebär ingen indexeringsgaranti.
 
 ## Driftchecklista för en senare session
 

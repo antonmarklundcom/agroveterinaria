@@ -21,4 +21,6 @@ Kontroll genomförd för uppdraget daterat 5 oktober 2026, America/Asuncion. HTT
 
 Lästa ägardokument: hela startprompten och `STEP-0-RECON.md`, samt alternativgrenens research README. Inga tillämpliga lokala AGENTS-/CLAUDE-filer hittades i checkouten eller samlingsmappen. Recon har obesvarade affärsfrågor och ett föreslaget telefonnummer; inget av detta behandlas som bekräftelse.
 
-Affärsrollen kan inte fastställas som en godkänd butik. Live beskriver försäljning/kontakt, men markerar själv RUC, adress, mottagarnummer och CRM som ofärdiga. Recon anger möjlig partneroperatör och detaljhandel, men kräver svar. Nyversionens tillfälliga roll är därför kategoriorientering med lokal produktlista, inte påstådd verksamhet eller förmedlingsmottagare.
+Affärsrollen bekräftades av ägaren i denna session: ”ordna leads åt agrovet.” Nyversionen förbereder därmed produktförfrågningar för agroveterinärverksamheter. Det är inte belägg för en egen butik, juridisk operatör eller ett godkänt mottagarnummer. Live och recon ersätter inte mottagarverifiering. Listbyggaren är lokal tills exakt mottagare och kanal är bekräftade.
+
+Ägaren bad därefter uttryckligen om en vanlig PR, inte draft, för att kunna mergea när han är tillbaka. Detta ersätter startpromptens draft-instruktion. Ingen merge eller publicering görs av agenten; publiceringsberoenden kvarstår.

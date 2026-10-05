@@ -1,6 +1,6 @@
 # Agroveterinaria — komplett granskningsversion
 
-Statisk, spanskspråkig kärnsajt för `agroveterinaria.com.py`. Ingen Node-server behövs i drift; Node används bara för bygg och lokal preview. **Draft för granskning, inte godkänd för publicering.** Inga leads, WhatsApp-meddelanden, order eller betalningar skickas.
+Statisk, spanskspråkig kärnsajt för `agroveterinaria.com.py`. Ingen Node-server behövs i drift; Node används bara för bygg och lokal preview. **Vanlig PR för granskning och ägarens merge, inte godkänd för publicering.** Ägaren har bekräftat leadgenerering åt Agrovet som affärsroll. Mottagarnamn, nummer och CRM återstår; inga leads, WhatsApp-meddelanden, order eller betalningar skickas i denna version.
 
 ## Källa och omfattning
 
@@ -28,7 +28,7 @@ Preview: `http://127.0.0.1:4175/`. Testsviten startar själv en separat lokal se
 
 ## Publiceringsberoenden
 
-Läs `DEPLOY.md` före någon framtida driftändring. Affärsroll, ansvarig operatör, godkänd kontaktmottagare och CRM-flöde är fortfarande obekräftade. Därför finns bara en lokal listbyggare och tydlig kontaktstatus. `noindex,nofollow` behålls. Ingen katalog, butik eller medicinsk rådgivning påstås.
+Läs `DEPLOY.md` före någon framtida driftändring. Affärsrollen är leadgenerering åt Agrovet enligt ägarens svar. Ansvarig operatör, godkänd kontaktmottagare och CRM-flöde är fortfarande obekräftade. Därför finns en lokal listbyggare och tydlig kontaktstatus tills mottagaren kan aktiveras. `noindex,nofollow` behålls. Ingen katalog, butik eller medicinsk rådgivning påstås.
 
 Ingen ny konto-, databas-, checkout- eller CRM-implementation har införts. Den live-refererade `contacto.php` och VenderCRM-konfigurationen finns inte i repoet och kan inte verifieras från frontend. Den här versionen skickar inte till denna okända backend.
 
