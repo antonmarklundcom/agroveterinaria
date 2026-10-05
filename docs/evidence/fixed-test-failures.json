@@ -1,0 +1,107 @@
+{
+  "results": [
+    {
+      "name": "10 public routes: metadata, one H1, truthful schema, local images",
+      "status": "pass",
+      "details": [
+        {
+          "route": "/",
+          "status": 200,
+          "title": "Productos veterinarios e insumos para animales | Agroveterinaria"
+        },
+        {
+          "route": "/productos/",
+          "status": 200,
+          "title": "Categorías de productos | Agroveterinaria"
+        },
+        {
+          "route": "/servicios/alimentos-balanceados/",
+          "status": 200,
+          "title": "Alimentos balanceados | Agroveterinaria"
+        },
+        {
+          "route": "/servicios/medicamentos-veterinarios/",
+          "status": 200,
+          "title": "Medicamentos veterinarios | Agroveterinaria"
+        },
+        {
+          "route": "/servicios/vacunas-para-ganado/",
+          "status": 200,
+          "title": "Vacunas para ganado | Agroveterinaria"
+        },
+        {
+          "route": "/servicios/antiparasitarios/",
+          "status": 200,
+          "title": "Antiparasitarios | Agroveterinaria"
+        },
+        {
+          "route": "/servicios/insumos-ganaderos/",
+          "status": 200,
+          "title": "Insumos ganaderos | Agroveterinaria"
+        },
+        {
+          "route": "/guia-de-consulta/",
+          "status": 200,
+          "title": "Cómo preparar una consulta de productos | Agroveterinaria"
+        },
+        {
+          "route": "/contacto/",
+          "status": 200,
+          "title": "Prepará tu lista de consulta | Agroveterinaria"
+        },
+        {
+          "route": "/privacidad/",
+          "status": 200,
+          "title": "Privacidad y alcance | Agroveterinaria"
+        }
+      ]
+    },
+    {
+      "name": "Internal links resolve",
+      "status": "pass",
+      "details": "17 distinct paths including query links"
+    },
+    {
+      "name": "robots.txt and sitemap",
+      "status": "pass",
+      "details": "10 canonical URLs; staging retains noindex"
+    },
+    {
+      "name": "Responsive widths and screenshots",
+      "status": "pass",
+      "details": "30 page/width combinations at 1440, 390 and 320; zero horizontal overflow"
+    },
+    {
+      "name": "Keyboard navigation",
+      "status": "pass",
+      "details": "Skip link, menu toggle and Escape/focus return"
+    },
+    {
+      "name": "Audience filters",
+      "status": "pass",
+      "details": "Mascotas=3; producción=5; all=5"
+    },
+    {
+      "name": "List validation and injection safety",
+      "status": "pass",
+      "details": "Whitespace rejected, HTML rendered as text, human category labels"
+    },
+    {
+      "name": "Copy and download",
+      "status": "pass",
+      "details": "Synthetic data; clipboard and UTF-8 .txt match summary"
+    },
+    {
+      "name": "List lifecycle",
+      "status": "pass",
+      "details": "Remove, 20-item limit, reset and no persistence"
+    },
+    {
+      "name": "No outbound leads or runtime errors",
+      "status": "pass",
+      "details": "Only local GET requests; no analytics, storage, sending endpoints or browser errors"
+    }
+  ],
+  "errors": [],
+  "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(await np.getByText('Prepará tu lista sin esta herramienta').isVisible())\n\n    at file:///C:/Users/anton/OneDrive/Documents/ChatGPT/Websites%20Oct26-%20and%20beyond/agroveterinaria-review/tools/test.mjs:25:346"
+}

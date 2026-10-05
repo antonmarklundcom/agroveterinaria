@@ -1,0 +1,121 @@
+AGROVETERINARIA — FULL SLUTRAPPORT
+Uppdragsdatum: 5 oktober 2026, America/Asuncion
+Status: komplett granskningsversion; draft för ägargranskning. Ingen merge eller produktionspublicering.
+
+LEVERANS OCH VIKTIGASTE RESULTAT
+
+En komplett statisk kärnsajt är byggd med naturlig paraguayansk spanska, egen oliv-/benvit-/majsgul identitet, läsbar typografi, fungerande mobilnavigation, kategorier för mascotas och produktion samt en produktlista som kan kopieras eller laddas ned lokalt. Fem befintliga sid-URL:er behålls. Fem nya innehållssidor och en riktig 404-sida ingår.
+
+Kontakt kan inte ärligt aktiveras ännu: live använder en uppenbar platshållare och beskriver en VenderCRM-anslutning som kräver konfiguration. Varken godkänd mottagare, operatör eller privat backend finns i repoet. Därför skickas inget från granskningsversionen. Listbyggaren ber inte om namn, telefon, e-post eller kliniska uppgifter och sparar inget mellan sidladdningar. Den synliga statusen förklarar att listan inte är en order, offert eller skickad förfrågan.
+
+1. IDENTIFIERAD KÄLLA
+
+Domän: https://agroveterinaria.com.py/
+Repo: https://github.com/antonmarklundcom/agroveterinaria
+Verifierad defaultgren: claude/argoveterinaria-website-plan-lnyjd1
+Bascommit: 68217dc590f35daf6b17c20eba2ab479511d7cfd
+Alternativgren: claude/wonderful-maxwell-calm0q
+Alternativcommit: e36ae0cf1e13c3e7ff6f77119b3b15f352a34ffd
+Leveransgren: codex/agroveterinaria-core-review
+
+Default innehåller bara STEP-0-RECON.md. Alternativgrenen har dessutom research/README.md och kwp.csv, men ingen sajtimplementation. Inga öppna PR:er fanns vid start. Den självständiga liveimplementationen med inline CSS och /assets/js/site.js kan alltså inte kopplas till ett Git-ursprungscommit i dessa grenar. Last-Modified var 2026-08-01 21:06:39 UTC; det är ingen Git-version och bevisar inte versionsordningen mellan live och repo.
+
+Publik HTML/JS, robots, sitemap, headers och sidstatus sparades läsande. Privat PHP-kod hämtades inte, inga produktionsformulär skickades. Den nya byggkällan är tools/build.mjs och source/assets; npm run build skapar public/. Node behövs inte i drift. Ingen äldre repoimplementation laddades över live. Separat checkout användes; samlingsmappens och övriga repons ocommittade arbete lämnades orört. Befintlig recon bevarades.
+
+Lästa instruktioner: hela uppdragsfilen, recon och alternativgrenens research README. Inga tillämpliga AGENTS.md/CLAUDE.md eller tidigare README/PLAN/STATUS/KNOWN-ISSUES/DEPLOY-filer fanns i defaultcheckouten. Källåsningen dokumenteras utförligare i docs/SOURCE-LOCK.md.
+
+2. LIVEGRANSKNING
+
+Live svarade med egen HTML och HTTP 200 hos Hostinger/hcdn. Följande fem sid-URL:er svarade 200:
+/
+/servicios/medicamentos-veterinarios/
+/servicios/alimentos-balanceados/
+/servicios/vacunas-para-ganado/
+/contacto/
+
+Alla fem hade title, ett H1, egen canonical och noindex,nofollow. robots.txt tillät hämtning och angav sitemap med de fem adresserna. Okänd sida svarade 404. /index.html svarade 200 som alias och en kategorisida utan sista slash slutade på slash-adressen. Inga länkar till mascota/perro/veterinarios fanns i det inventerade innehållet och inga sådana länkar lades till.
+
+Startsidan har en stor gradienthero utan bild, flera WhatsApp-/telefonknappar mot samma platshållarnummer, en mörk informationsrad och sex kategorikort. Den säger att RUC, adress, öppettider och verkligt nummer återstår. Kopian blandar kommersiella löften med intern lanseringsinformation. Store-schema innehåller samma platshållarnummer och obekräftad affärsroll.
+
+Mobilnavigationen på startsidan döljs utan en menyknapp. Undersidor saknar användbar kategorinavigation, fördjupning och footer. Kontaktformuläret skickar till /contacto.php, men det framgår inte om en fungerande mottagare finns. Klientens kontaktlänkar observerades utan att aktiveras. Formulär och WhatsApp skickades inte. Första tangentbordsfokus på undersidorna var varumärkeslänken; ingen skip-länk fanns. Ingen full tillgänglighetscertifiering görs.
+
+Startsidan visade periodvis en Hostinger-webbläsarkontroll i den isolerade webbläsaren. Efter väntan renderades verkligt sidinnehåll på / vid både 1440 och 390 px. Före-bilderna i slutjämförelserna visar den faktiska sidan, inte en konstruerad rekonstruktion. Den tidiga kontrollobservationen finns i live-crawl.json/live-rendered-observations.json; slutlig fångst verifieras av home-capture.json. Undersida och kontakt kunde granskas direkt. Ingen DNS-, TLS- eller permanent HTTP-blockering konstaterades.
+
+3. AFFÄRSROLL OCH RIMLIGA VAL
+
+Live signalerar butik/försäljning; recon nämner partneroperatör och öppna frågor. Det verifierar inte en verklig, godkänd verksamhet. Ingen RUC, habilitering, personal, butik, adress, frakt, pris, lager, svarstid eller jour uppfanns. Den tillfälliga rollen är ärlig kategoriorientering med lokal lista. Den ska inte beskrivas som bekräftad butik eller aktiv offertförmedling.
+
+En samlad fråga ställdes tidigt om affärsroll, godkända kontaktuppgifter och CRM-mottagare. Inget bekräftande svar fanns när leveransen färdigställdes. Uteblivet svar behandlades inte som godkännande. Därför är PR:en draft, kontaktmottagaren inaktiv och noindex behållen. Användbara kategorier hämtas från live, men inga produktposter eller registreringsuppgifter har fabricerats.
+
+4. VAD SOM FÄRDIGSTÄLLTS
+
+- Tio innehållssidor: startsida, fem kategorier, kategoriöversikt, konsultationsguide, kontakt/lista och integritet/omfattning, plus 404.
+- Befintliga fem URL:er bevaras. Antiparasitarios och insumos får egna sammanhängande sidor, inte massproducerade ortssidor.
+- Första tre delarna förklarar värdet, sätt att fortsätta och skillnaden mellan mascotas och produktion.
+- Mobilmeny med aria-expanded, Escape och återställt fokus; skip-länk och tydliga fokusmarkeringar; reducerad rörelse respekteras.
+- Produktlistan använder minimala kommersiella fält, max 20 rader, trimning av tomma värden, säkert textinnehåll, borttagning, tömning, urklipp och UTF-8-export. Ingen transport, backend eller databas finns i detta läge.
+- JavaScriptfri navigation och samtliga kategorier fungerar. Kontakt/lista visar begripliga manuella instruktioner när skript saknas.
+- Generiska WebPage/WebSite-data beskriver synligt innehåll. Obekräftat Store-schema och platshållarkontakt tas bort i granskningspaketet. Titles, descriptions, canonical, sitemap och robotdirektiv är kontrollerade.
+- Alla typsnitt och webbresurser är lokala/systembaserade. Ingen analytik, externa fontanrop eller cookie-banner behövs i den nya versionen.
+- Ingen medicinsk dosering, diagnos, behandlings-/läkemedelsinstruktion eller vaccinplan publiceras. SENACSA länkas endast som verifierad officiell informationskälla; länken innebär ingen habilitering av sajten.
+
+VenderCRM återimplementerades inte eftersom integrationen inte kunde verifieras. Den befintliga kontaktendpointens funktion har varken bevisats eller bedömts som trasig genom ett leadtest. Servervalidering, spam, same-origin/CSRF, loggar och felhantering är framtida driftkontroller för den verkliga backendkällan. Granskningsversionen exponerar ingen sådan mottagartjänst.
+
+5. HIGGSFIELD — MAX 50 KREDITER
+
+Exakt katalogval bekräftades: gpt_image_2_5, variant sunburst, kvalitet medium, upplösning 1k, format 3:2. Två separata förhandspriser var 0,5 kredit vardera. Två jobb skapades och båda slutfördes:
+e85fdf10-6165-420c-9d57-8fb10d30165e — betesmiljö med bovinos
+cdc0f18e-3064-47b4-b170-9a5d3c0c1dc5 — hund i en vanlig patiomiljö
+
+Uppskattat totalt: 1 kredit. Saldo före: 5706,5. Saldo efter: 5705,5. Observerad saldoändring: 1 kredit. Connectorn visar ingen faktisk debiteringspost per jobb, så saldoändringen redovisas separat och är inte en oberoende faktura. Kvar av uppdragsbudgeten enligt uppskattningen: 49 krediter. Inga omförsök, variationer, debiterade misslyckanden, videor, köp eller abonnemangsändringar.
+
+Bilderna är tydligt märkta som AI-illustrationer och föreställer inte egna lokaler, produkter, kunder eller personal. Sex WebP-varianter levereras i 480/800/1024 px; sammanlagd assetstorlek cirka 342 KiB. Hero prioriteras och övriga bilder laddas efter behov. Alt-texter beskriver illustrationerna. Logg: docs/media-ledger.json.
+
+6. FAKTISKA TESTRESULTAT OCH VISUELL KONTROLL
+
+npm ci --ignore-scripts lyckades med låsta beroenden; paketkontrollen rapporterade 0 kända sårbarheter vid denna körning. npm run build lyckades: 11 HTML-sidor. Syntaxkontroller av byggkälla och sajt-JS lyckades. Slutlig npm test passerade samtliga 13 grupper i Chrome 155.0.8059.27:
+1) Tio sid-URL:er, H1, språk, metadata, canonical, schema och bildladdning.
+2) 17 distinkta interna sökvägar inklusive query-länkar svarar 200.
+3) robots och sitemap med tio canonical-URL:er.
+4) 30 kombinationer av sida/bredd på 1440, 390 och 320 px: ingen horisontell overflow.
+5) Tangentbord: skip-länk, meny, Escape och fokusåtergång.
+6) Behovsfilter: mascotas tre kategorier; produktion fem.
+7) Listvalidering och HTML-injektion som ofarlig text.
+8) Kopiering och nedladdning av syntetisk lista.
+9) Borttagning, 20-radersgräns, tömning och ingen persistens.
+10) Endast lokala GET-anrop under funktionstesterna; inga externa leads eller webbläsarfel.
+11) Synlig navigation, kategorier och listinstruktioner utan JavaScript.
+12) Okända/privata sökvägar 404, POST 405, trailing-slash 301 i lokal preview.
+13) Release-allowlist och scan av 23 publika filer: inga käll-/docfiler, hemligheter eller platshållarnummer i public/.
+
+Två tidiga kontroller behövde rättas: Windows-urklipp använder CRLF och testet jämför nu normaliserade radslut; script-blockerat läge behövde en explicit synlig fallback i stället för enbart noscript. En visuell kontroll fångade också listpanelens desktop-grid, som korrigerades. Den slutliga testfilen är auktoritativ: docs/evidence/test-results.json. Den tidigare korrigerade testfelhistoriken finns separat och innebär inte en kvarstående fail.
+
+Startsida, alimentos och kontakt/lista granskades visuellt på desktop/mobil/320 px och sparades som helsida och toppvy. Sex jämförelsebilder visar desktop/mobil före/efter; 320-bilder finns i after/. Fem explicita CSS-färgpar har beräknad kontrast dokumenterad i contrast-samples.json. Detta är stickprov, inte en WCAG-certifiering. Ingen Lighthouse-, Core Web Vitals-, Search Console- eller full tillgänglighetspoäng påstås. Hostingers framtida runtime, cache, regler och privata backend måste verifieras på staging.
+
+7. PREVIEW, PR OCH ABSOLUTA SÖKVÄGAR
+
+Lokal preview: http://127.0.0.1:4175/ — öppnad i Codex-panelen; processen måste vara igång.
+Checkout: C:\Users\anton\OneDrive\Documents\ChatGPT\Websites Oct26- and beyond\agroveterinaria-review
+Byggresultat: C:\Users\anton\OneDrive\Documents\ChatGPT\Websites Oct26- and beyond\agroveterinaria-review\public
+Full text-/bildrapport: samma checkout\docs\rapport-2026-10-05.txt och rapport-2026-10-05.html
+Tester: samma checkout\docs\evidence\test-results.json
+Bilder: samma checkout\docs\evidence\before, after och comparison
+Driftunderlag: samma checkout\DEPLOY.md
+Nästa-session-prompt: samma checkout\docs\nasta-session.txt
+Separat releasepaket och slutcommit/PR-identitet: C:\Users\anton\OneDrive\Documents\ChatGPT\Websites Oct26- and beyond\agroveterinaria-delivery
+
+PR ska vara draft till den verifierade defaultgrenen och lämnas utan merge. Den exakta PR-adressen och leveransens slutcommit registreras i det separata leveransmanifestet och slutmeddelandet när skapandet lyckats. Ingen produktionsändring eller ny Codex-chatt skapades.
+
+8. RANGORDNADE ÄGARBESLUT OCH PUBLICERINGSBEROENDEN
+
+1. Fastställ affärsroll och vem som juridiskt/operativt ansvarar; godkänn kategoriernas faktiska omfattning.
+2. Godkänn exakt kontaktmottagare och telefon/WhatsApp. Inget nummer från live eller äldre recon betraktas som verifierat.
+3. Ge läsande backend-/driftunderlag för Hostinger och verklig VenderCRM-integration. Backup och jämförelse krävs innan ett paket kan ersätta något i drift.
+4. Verifiera verkligt mottagarflöde på staging med testmottagare, inklusive validering, spam, same-origin/CSRF, loggar, fel och uppdaterad integritetstext.
+5. Bekräfta eventuell RUC, adress, tider, leverans, betalning, habiliteringar och verkliga kataloguppgifter. Publicera endast styrkta fakta.
+6. Godkänn copy och medicinska gränser. Behåll illustrativ bildmärkning eller ersätt med rättighetsklarerade riktiga foton.
+7. Besluta om indexering och separat publicering först efter ovanstående. Nu behålls noindex. Bevara URL:er, verkliga endpoints och rollback-möjlighet.
+
+DET SOM SAKNADES I UPPDRAGET OCH HUR DET LÖSTES
+
+Den faktiska livekoden, ursprungscommit, privat PHP/CRM-källa, affärsoperatör, godkänt nummer och katalogdata saknades. Jag löste det reversibla arbetet genom att spara live-referensen, identifiera båda repo-grenarnas verkliga innehåll, bygga en ny reproducerbar källa i separat checkout och använda ett ärligt orienterings-/listläge. Ägar- och driftuppgifter kvarstår som uttryckliga publiceringsberoenden, inte antagna fakta. Det förberedda paketet är komplett för granskning; kontaktaktivering och drift kräver dessa beslut och ett nytt publiceringsuppdrag.

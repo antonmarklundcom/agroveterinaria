@@ -1,0 +1,2 @@
+const path=require('path');const sharp=require(process.env.SHARP_MODULE||'sharp');
+(async()=>{for(const name of ['campo','mascotas'])for(const width of [480,800,1024]){const target=path.resolve(__dirname,'../source/assets/img',`${name}-${width}.webp`);await sharp(path.resolve(__dirname,'../../agroveterinaria-audit/media',`${name}.png`)).resize({width,withoutEnlargement:true}).webp({quality:78,effort:6}).toFile(target);console.log(name,width,require('fs').statSync(target).size);} })().catch(e=>{console.error(e);process.exit(1)});

@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="es-PY">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Agroveterinaria en Paraguay | Productos e insumos ganaderos</title>
+  <meta name="description" content="Agroveterinaria para consultas sobre medicamentos veterinarios, alimentos balanceados, vacunas e insumos ganaderos. Escribinos por WhatsApp.">
+  <link rel="canonical" href="https://agroveterinaria.com.py/">
+  <meta property="og:title" content="Agroveterinaria en Paraguay">
+  <meta property="og:description" content="Consultas por WhatsApp sobre productos veterinarios e insumos para animales.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://agroveterinaria.com.py/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --bg: #F5F4F1;
+  --surface: #FFFFFF;
+  --text: #1A1815;
+  --muted: #63605A;
+  --accent: #C2410C;
+  --accent-soft: #FBE9E0;
+  --dark: #22201C;
+  --border: #DEDAD3;
+  --wa: #25D366;
+  --shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px rgba(0,0,0,.06);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+.container { width: min(1280px, 100% - 32px); margin: 0 auto; }
+.eyebrow { color: var(--accent); font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+h1, h2, h3 { font-family: Archivo, Inter, sans-serif; line-height: 1.05; letter-spacing: 0; margin: 0; }
+h1 { font-size: clamp(42px, 10vw, 76px); max-width: 880px; }
+h2 { font-size: clamp(32px, 7vw, 48px); }
+h3 { font-size: clamp(20px, 4vw, 26px); }
+p { margin: 0; color: var(--muted); }
+.lead { font-size: clamp(18px, 3vw, 20px); max-width: 720px; }
+.btn {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 14px;
+  padding: 13px 18px;
+  text-decoration: none;
+  font-weight: 800;
+  border: 1px solid transparent;
+}
+.btn-primary { background: var(--wa); color: #052914; }
+.btn-secondary { background: var(--surface); color: var(--text); border-color: var(--border); }
+.btn-accent { background: var(--accent); color: white; }
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(245,244,241,.94);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+.nav {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.brand { font-weight: 900; text-decoration: none; font-size: 1.05rem; }
+.nav-links { display: none; gap: 18px; align-items: center; }
+.nav-links a { text-decoration: none; color: var(--muted); font-weight: 700; }
+.hero {
+  min-height: 88vh;
+  display: grid;
+  align-items: end;
+  background:
+    linear-gradient(180deg, rgba(34,32,28,.22), rgba(34,32,28,.74)),
+    radial-gradient(circle at 82% 16%, rgba(194,65,12,.28), transparent 32%),
+    linear-gradient(135deg, #6f5a3d, #23201b 70%);
+  color: white;
+  padding: 96px 0 0;
+}
+.hero p { color: rgba(255,255,255,.84); }
+.hero-panel {
+  width: min(980px, 100%);
+  background: rgba(255,255,255,.94);
+  color: var(--text);
+  border-radius: 16px 16px 0 0;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  transform: translateY(40px);
+}
+.hero-panel p { color: var(--muted); }
+.hero-actions, .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+.trust {
+  background: var(--dark);
+  color: white;
+  padding: 72px 0 28px;
+}
+.trust-grid, .service-grid, .principles, .coverage-grid {
+  display: grid;
+  gap: 16px;
+}
+.trust-item, .card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+.trust-item { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.16); }
+.trust-item p { color: rgba(255,255,255,.72); }
+section { padding: 84px 0; }
+.section-head { display: grid; gap: 12px; margin-bottom: 28px; }
+.service-card { min-height: 230px; display: flex; flex-direction: column; justify-content: space-between; }
+.icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 900;
+}
+.band {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: var(--accent);
+  color: white;
+  padding: 64px 0;
+}
+.band p { color: rgba(255,255,255,.86); }
+.step {
+  display: grid;
+  gap: 10px;
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+}
+.step-num { font-family: Archivo, sans-serif; color: var(--accent); font-size: 2rem; font-weight: 900; }
+.split { display: grid; gap: 32px; align-items: start; }
+.form {
+  display: grid;
+  gap: 12px;
+}
+label { display: grid; gap: 6px; font-weight: 800; }
+input, textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 13px 14px;
+  font: inherit;
+}
+.hidden-field { position: absolute; left: -9999px; }
+.footer { background: var(--dark); color: white; padding: 36px 0 110px; }
+.footer p { color: rgba(255,255,255,.7); }
+.fab {
+  position: fixed;
+  right: 16px;
+  bottom: 88px;
+  z-index: 40;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--wa);
+  color: #052914;
+  font-weight: 900;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+}
+.mobile-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 35;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  padding: 10px 12px;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+.cookie {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: 78px;
+  z-index: 50;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 14px;
+}
+.thanks { min-height: 100vh; display: grid; align-content: center; gap: 18px; width: min(720px, 100% - 32px); margin: 0 auto; }
+@media (min-width: 640px) {
+  .trust-grid, .service-grid, .principles, .coverage-grid { grid-template-columns: repeat(2, 1fr); }
+  .cookie { left: auto; width: 420px; }
+}
+@media (min-width: 1024px) {
+  body { padding-bottom: 0; }
+  .nav-links { display: flex; }
+  .hero-panel { padding: 34px; }
+  .service-grid { grid-template-columns: repeat(3, 1fr); }
+  .trust-grid, .coverage-grid { grid-template-columns: repeat(4, 1fr); }
+  .principles { grid-template-columns: repeat(3, 1fr); }
+  .split { grid-template-columns: 1fr 440px; }
+  .mobile-bar { display: none; }
+  .fab { bottom: 16px; }
+}
+@media (min-width: 1280px) {
+  .container { width: min(1280px, 100% - 48px); }
+}
+
+</style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Agroveterinaria",
+    "url": "https://agroveterinaria.com.py/",
+    "telephone": "+595981000000",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "PY"
+    },
+    "areaServed": "Paraguay"
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/">Agroveterinaria</a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="/servicios/medicamentos-veterinarios/">Medicamentos</a>
+        <a href="/servicios/alimentos-balanceados/">Alimentos</a>
+        <a href="/servicios/vacunas-para-ganado/">Vacunas</a>
+        <a href="/contacto/">Contacto</a>
+      </nav>
+      <a class="btn btn-primary" data-wa href="#">Escribinos</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-panel">
+          <p class="eyebrow">Agroveterinaria en Paraguay</p>
+          <h1>Productos veterinarios e insumos para animales</h1>
+          <p class="lead">Consultá por medicamentos veterinarios, alimentos balanceados, vacunas, antiparasitarios e insumos ganaderos. Te orientamos por WhatsApp para confirmar disponibilidad antes de pasar.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" data-wa data-wa-message="Hola, vi su pagina web y quiero consultar por productos agroveterinarios" href="#">Consultar por WhatsApp</a>
+            <a class="btn btn-secondary" data-tel href="#">Llamanos: <span data-phone>+595 981 000 000</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust">
+      <div class="container trust-grid">
+        <div class="trust-item"><strong>Consulta rapida</strong><p>Enviá foto o nombre del producto por WhatsApp.</p></div>
+        <div class="trust-item"><strong>Ganadería y mascotas</strong><p>Productos para distintas necesidades rurales y urbanas.</p></div>
+        <div class="trust-item"><strong>Pago a confirmar</strong><p>Metodos disponibles se confirman con el local.</p></div>
+        <div class="trust-item"><strong>Datos pendientes</strong><p>RUC, dirección y horarios deben confirmarse antes de indexar.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Servicios</p>
+          <h2>Consultas frecuentes de una agroveterinaria</h2>
+          <p class="lead">Priorizamos las búsquedas con intención clara: disponibilidad, precio, uso correcto y contacto inmediato.</p>
+        </div>
+        <div class="service-grid">
+          <article class="card service-card">
+            <span class="icon">Rx</span>
+            <h3>Medicamentos veterinarios</h3>
+            <p>Antibióticos, antiinflamatorios, vitaminas y productos según indicación profesional.</p>
+            <a href="/servicios/medicamentos-veterinarios/">Ver servicio</a>
+          </article>
+          <article class="card service-card">
+            <span class="icon">Kg</span>
+            <h3>Alimentos balanceados</h3>
+            <p>Consulta por alimento para perros, gatos, aves, equinos y animales de producción.</p>
+            <a href="/servicios/alimentos-balanceados/">Ver servicio</a>
+          </article>
+          <article class="card service-card">
+            <span class="icon">Va</span>
+            <h3>Vacunas para ganado</h3>
+            <p>Orientación sobre disponibilidad de vacunas y productos sanitarios para el rodeo.</p>
+            <a href="/servicios/vacunas-para-ganado/">Ver servicio</a>
+          </article>
+          <article class="card service-card">
+            <span class="icon">Ap</span>
+            <h3>Antiparasitarios</h3>
+            <p>Opciones para control interno y externo, segun especie y necesidad.</p>
+          </article>
+          <article class="card service-card">
+            <span class="icon">In</span>
+            <h3>Insumos ganaderos</h3>
+            <p>Productos y accesorios de uso diario para campo, corral y manejo animal.</p>
+          </article>
+          <article class="card service-card">
+            <span class="icon">Co</span>
+            <h3>Consulta por disponibilidad</h3>
+            <p>Mandanos tu lista y te respondemos que se puede preparar o cotizar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">WhatsApp primero</p>
+          <h2>Pedí disponibilidad antes de moverte hasta el local</h2>
+        </div>
+        <div>
+          <p>Enviá nombre del producto, especie animal y ciudad. Eso ayuda a responder mejor y evita vueltas innecesarias.</p>
+          <div class="actions">
+            <a class="btn btn-primary" data-wa data-wa-message="Hola, quiero consultar disponibilidad de un producto veterinario" href="#">Consultar ahora</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Cómo trabajamos</p>
+          <h2>Una consulta simple, sin vueltas</h2>
+        </div>
+        <div class="principles">
+          <div class="card step"><span class="step-num">01</span><h3>Escribinos</h3><p>Contanos que animal, producto o problema querés resolver.</p></div>
+          <div class="card step"><span class="step-num">02</span><h3>Confirmamos</h3><p>Revisamos disponibilidad, presentación y datos que haya que tener en cuenta.</p></div>
+          <div class="card step"><span class="step-num">03</span><h3>Coordinamos</h3><p>Te indicamos el siguiente paso: pasar, reservar o hablar con el responsable.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Cobertura</p>
+          <h2>Zonas a confirmar</h2>
+          <p class="lead">Antes de lanzar con SEO, hay que confirmar ciudad, barrios y si existe entrega o solo atención en local.</p>
+        </div>
+        <div class="card">
+          <h3>Datos pendientes para producción</h3>
+          <p>Dirección, horarios, RUC, métodos de pago, redes sociales, fotos reales y número de WhatsApp definitivo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Contacto</p>
+          <h2>Consultá por productos agroveterinarios</h2>
+          <p class="lead">WhatsApp es la vía principal. El formulario queda conectado a VenderCRM cuando se configuran URL y API key en Hostinger.</p>
+          <div class="actions">
+            <a class="btn btn-primary" data-wa href="#">Escribinos por WhatsApp</a>
+            <a class="btn btn-secondary" data-tel href="#">Llamar</a>
+          </div>
+        </div>
+        <form class="card form" action="/contacto.php" method="POST">
+          <input type="hidden" name="form_id" value="home-contacto">
+          <label>Nombre<input name="nombre" required autocomplete="name"></label>
+          <label>WhatsApp<input name="telefono" type="tel" required autocomplete="tel" placeholder="0981 123 456" inputmode="tel"></label>
+          <label>Email opcional<input name="email" type="email" autocomplete="email"></label>
+          <label>Consulta<textarea name="mensaje" rows="4"></textarea></label>
+          <input class="hidden-field" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn-accent" type="submit">Enviar consulta</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <strong>Agroveterinaria</strong>
+      <p>Paraguay · WhatsApp <span data-phone>+595 981 000 000</span></p>
+      <p>Dirección, horarios y RUC pendientes de confirmación.</p>
+    </div>
+  </footer>
+  <a class="fab" data-wa aria-label="Escribinos por WhatsApp" href="#">WA</a>
+  <div class="mobile-bar"><a class="btn btn-primary" data-wa href="#">WhatsApp</a><a class="btn btn-secondary" data-tel href="#">Llamar</a></div>
+  <div class="cookie"><p>Usamos datos básicos de navegación para entender el origen de las consultas.</p><button class="btn btn-secondary" data-cookie-ok>Aceptar</button></div>
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>

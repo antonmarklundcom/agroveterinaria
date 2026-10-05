@@ -1,0 +1,35 @@
+{
+  "method": "WCAG relative luminance formula on explicit CSS color pairs; sample only, not full accessibility certification",
+  "samples": [
+    {
+      "name": "Brödtext på bakgrund",
+      "foreground": "#535c51",
+      "background": "#f4f1e7",
+      "ratio": 6.16
+    },
+    {
+      "name": "Mörk text på gul CTA",
+      "foreground": "#182019",
+      "background": "#e5b847",
+      "ratio": 8.96
+    },
+    {
+      "name": "Ljus text på mörk bakgrund",
+      "foreground": "#f4f1e7",
+      "background": "#18261c",
+      "ratio": 13.94
+    },
+    {
+      "name": "Hero accent",
+      "foreground": "#65703d",
+      "background": "#f4f1e7",
+      "ratio": 4.72
+    },
+    {
+      "name": "Mörk sektion brödtext",
+      "foreground": "#c8cebf",
+      "background": "#18261c",
+      "ratio": 9.78
+    }
+  ]
+}
