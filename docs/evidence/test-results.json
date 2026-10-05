@@ -59,6 +59,11 @@
       ]
     },
     {
+      "name": "WhatsApp links on every public page",
+      "status": "pass",
+      "details": "Approved number, site identification, canonical page and interest; 46 links checked without opening WhatsApp"
+    },
+    {
       "name": "Internal links resolve",
       "status": "pass",
       "details": "17 distinct paths including query links"
@@ -89,6 +94,11 @@
       "details": "Whitespace rejected, HTML rendered as text, human category labels"
     },
     {
+      "name": "WhatsApp product list and activation",
+      "status": "pass",
+      "details": "Category, species, quantity, all products, special characters and removal; click intercepted, no message sent"
+    },
+    {
       "name": "Copy and download",
       "status": "pass",
       "details": "Synthetic data; clipboard and UTF-8 .txt match summary"
@@ -116,7 +126,7 @@
     {
       "name": "Release allowlist and placeholder/secret scan",
       "status": "pass",
-      "details": "23 public files; no source, docs, credentials or placeholder phone"
+      "details": "24 public files; no source, docs, credentials or placeholder phone"
     }
   ],
   "errors": [],
@@ -132,6 +142,7 @@
     "assets\\img\\mascotas-800.webp",
     "assets\\site.css",
     "assets\\site.js",
+    "assets\\whatsapp.js",
     "contacto\\index.html",
     "guia-de-consulta\\index.html",
     "index.html",

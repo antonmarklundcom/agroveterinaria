@@ -21,6 +21,6 @@ Kontroll genomförd för uppdraget daterat 5 oktober 2026, America/Asuncion. HTT
 
 Lästa ägardokument: hela startprompten och `STEP-0-RECON.md`, samt alternativgrenens research README. Inga tillämpliga lokala AGENTS-/CLAUDE-filer hittades i checkouten eller samlingsmappen. Recon har obesvarade affärsfrågor och ett föreslaget telefonnummer; inget av detta behandlas som bekräftelse.
 
-Affärsrollen bekräftades av ägaren i denna session: ”ordna leads åt agrovet.” Nyversionen förbereder därmed produktförfrågningar för agroveterinärverksamheter. Det är inte belägg för en egen butik, juridisk operatör eller ett godkänt mottagarnummer. Live och recon ersätter inte mottagarverifiering. Listbyggaren är lokal tills exakt mottagare och kanal är bekräftade.
+Affärsrollen bekräftades av ägaren i denna session: ”ordna leads åt agrovet.” Ägaren godkände därefter uttryckligen mottagarnumret +595 992 279599 och krävde källsajt samt sida/service/produkt i alla WhatsApp-meddelanden. Detta är grunden för det nya direkta WhatsApp-flödet. En egen butik eller juridisk operatör har inte antagits. Listan bereds lokalt och skickas först när besökaren väljer att skicka i WhatsApp.
 
 Ägaren bad därefter uttryckligen om en vanlig PR, inte draft, för att kunna mergea när han är tillbaka. Detta ersätter startpromptens draft-instruktion. Ingen merge eller publicering görs av agenten; publiceringsberoenden kvarstår.

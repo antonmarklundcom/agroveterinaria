@@ -1,6 +1,6 @@
 # Agroveterinaria — komplett granskningsversion
 
-Statisk, spanskspråkig kärnsajt för `agroveterinaria.com.py`. Ingen Node-server behövs i drift; Node används bara för bygg och lokal preview. **Vanlig PR för granskning och ägarens merge, inte godkänd för publicering.** Ägaren har bekräftat leadgenerering åt Agrovet som affärsroll. Mottagarnamn, nummer och CRM återstår; inga leads, WhatsApp-meddelanden, order eller betalningar skickas i denna version.
+Statisk, spanskspråkig kärnsajt för `agroveterinaria.com.py`. Ingen Node-server behövs i drift; Node används bara för bygg och lokal preview. **Vanlig PR för granskning och ägarens merge, inte godkänd för publicering.** Ägaren har bekräftat leadgenerering åt Agrovet och godkänt WhatsApp-numret **+595 992 279599**. Alla WhatsApp-länkar förifyller sajt, canonical-sida och kategori/intresse; listflödet lägger även med produkter, djurslag och mängd. Besökaren granskar och skickar meddelandet i WhatsApp.
 
 ## Källa och omfattning
 
@@ -22,13 +22,13 @@ npm test
 npm run preview
 ```
 
-Preview: `http://127.0.0.1:4175/`. Testsviten startar själv en separat lokal server och använder bara syntetiska data. Tester inkluderar tio URL:er, interna länkar, metadata, robotdirektiv, schema, 404, privata sökvägar, behovsfilter, listbyggare, XSS, urklipp, export, 20-radersgräns, tangentbord, utan JavaScript och 1440/390/320 px.
+Preview: `http://127.0.0.1:4175/`. Testsviten startar själv en separat lokal server och använder bara syntetiska data. Tester inkluderar tio URL:er, interna länkar, metadata, robotdirektiv, schema, 404, privata sökvägar, behovsfilter, listbyggare, XSS, urklipp, export, 20-radersgräns, tangentbord, utan JavaScript och 1440/390/320 px. WhatsApp-mottagare, alla förifyllda meddelanden, produktlistor och specialtecken verifieras utan att kontakta WhatsApp; testklick fångas lokalt.
 
 `public/` innehåller byggresultatet för direkt granskning. Ändra byggkällan och kör byggsteget igen; redigera inte genererad HTML manuellt. Befintlig projektplan bevaras orörd.
 
 ## Publiceringsberoenden
 
-Läs `DEPLOY.md` före någon framtida driftändring. Affärsrollen är leadgenerering åt Agrovet enligt ägarens svar. Ansvarig operatör, godkänd kontaktmottagare och CRM-flöde är fortfarande obekräftade. Därför finns en lokal listbyggare och tydlig kontaktstatus tills mottagaren kan aktiveras. `noindex,nofollow` behålls. Ingen katalog, butik eller medicinsk rådgivning påstås.
+Läs `DEPLOY.md` före någon framtida driftändring. Affärsrollen och WhatsApp-mottagarnumret är godkända av ägaren. Juridisk operatör och eventuell CRM-integration återstår som driftuppgifter; de blockerar inte det godkända direkta WhatsApp-flödet i PR:en. `noindex,nofollow` behålls inför separat publicerings-/indexeringsbeslut. Ingen katalog, butik eller medicinsk rådgivning påstås.
 
 Ingen ny konto-, databas-, checkout- eller CRM-implementation har införts. Den live-refererade `contacto.php` och VenderCRM-konfigurationen finns inte i repoet och kan inte verifieras från frontend. Den här versionen skickar inte till denna okända backend.
 

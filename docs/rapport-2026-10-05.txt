@@ -6,7 +6,7 @@ LEVERANS OCH VIKTIGASTE RESULTAT
 
 En komplett statisk kärnsajt är byggd med naturlig paraguayansk spanska, egen oliv-/benvit-/majsgul identitet, läsbar typografi, fungerande mobilnavigation, kategorier för mascotas och produktion samt en produktlista som kan kopieras eller laddas ned lokalt. Fem befintliga sid-URL:er behålls. Fem nya innehållssidor och en riktig 404-sida ingår.
 
-Kontakt kan inte ärligt aktiveras ännu: live använder en uppenbar platshållare och beskriver en VenderCRM-anslutning som kräver konfiguration. Varken godkänd mottagare, operatör eller privat backend finns i repoet. Därför skickas inget från granskningsversionen. Listbyggaren ber inte om namn, telefon, e-post eller kliniska uppgifter och sparar inget mellan sidladdningar. Den synliga statusen förklarar att listan inte är en order, offert eller skickad förfrågan.
+Ägaren har nu godkänt WhatsApp-numret +595 992 279599. Alla WhatsApp-knappar använder detta nummer och förifyller agroveterinaria.com.py, den aktuella canonical-sidan och relevant kategori/intresse. Listflödet tar även med produkter, djurslag och mängd; produktnamn med specialtecken bevaras. Besökaren granskar och skickar från WhatsApp. Listbyggaren ber inte om namn, telefon, e-post eller kliniska uppgifter och sparar inget mellan sidladdningar. En lista är inte en order eller offert. Ingen ny CRM-integration krävs för detta direkta flöde och inga verkliga meddelanden skickades under test.
 
 1. IDENTIFIERAD KÄLLA
 
@@ -43,9 +43,9 @@ Startsidan visade periodvis en Hostinger-webbläsarkontroll i den isolerade webb
 
 3. AFFÄRSROLL OCH RIMLIGA VAL
 
-Ägaren bekräftade affärsrollen under arbetet: ”ordna leads åt agrovet.” Versionen förbereder därmed produktförfrågningar för agroveterinärverksamheter. Live/recon bevisar fortfarande inte en egen butik eller juridisk operatör. Ingen RUC, habilitering, personal, butik, adress, frakt, pris, lager, svarstid eller jour uppfanns. Listan är lokal tills en exakt kontaktmottagare har godkänts.
+Ägaren bekräftade affärsrollen under arbetet: ”ordna leads åt agrovet”, och godkände därefter numret +595 992 279599. Versionen leder produktförfrågningar till det numret via besökarens WhatsApp. Live/recon bevisar fortfarande inte en egen butik eller juridisk operatör. Ingen RUC, habilitering, personal, butik, adress, frakt, pris, lager, svarstid eller jour uppfanns. Listan bereds lokalt och skickas efter besökarens val i WhatsApp.
 
-En samlad fråga ställdes tidigt om affärsroll, godkända kontaktuppgifter och CRM-mottagare. Svaret bekräftade leadgenerering. En följdfråga ställdes om exakt mottagarnamn, nummer och CRM; inga sådana uppgifter hade godkänts när leveransen färdigställdes. Kontaktmottagaren förblir därför inaktiv och noindex behålls. Ägaren instruerade uttryckligen att lämna en vanlig PR för egen merge när han är tillbaka; detta ersätter startpromptens draft-instruktion. Användbara kategorier hämtas från live, utan fabricerade produktposter.
+En samlad fråga ställdes tidigt om affärsroll och kontakt. Ägaren bekräftade leadgenerering och därefter det godkända WhatsApp-numret samt innehållet i alla meddelanden. Dessa uppgifter är införda i PR:en. Noindex behålls inför ett separat publicerings-/indexeringsbeslut. Ägaren instruerade uttryckligen att lämna en vanlig PR för egen merge den 6 oktober 2026; detta ersätter startpromptens draft-instruktion. Användbara kategorier hämtas från live, utan fabricerade produktposter.
 
 4. VAD SOM FÄRDIGSTÄLLTS
 
@@ -53,7 +53,7 @@ En samlad fråga ställdes tidigt om affärsroll, godkända kontaktuppgifter och
 - Befintliga fem URL:er bevaras. Antiparasitarios och insumos får egna sammanhängande sidor, inte massproducerade ortssidor.
 - Första tre delarna förklarar värdet, sätt att fortsätta och skillnaden mellan mascotas och produktion.
 - Mobilmeny med aria-expanded, Escape och återställt fokus; skip-länk och tydliga fokusmarkeringar; reducerad rörelse respekteras.
-- Produktlistan använder minimala kommersiella fält, max 20 rader, trimning av tomma värden, säkert textinnehåll, borttagning, tömning, urklipp och UTF-8-export. Ingen transport, backend eller databas finns i detta läge.
+- Produktlistan använder minimala kommersiella fält, max 20 rader, trimning av tomma värden, säkert textinnehåll, borttagning, tömning, urklipp, UTF-8-export och WhatsApp-förfrågan. Alla WhatsApp-länkar förifylls av en gemensam funktion och fungerar även utan JavaScript för sid-/kategorikontext. Produktlistan uppdaterar alla WhatsApp-länkar på kontaktsidan när produkter läggs till eller tas bort. Ingen automatisk transport, servermottagare eller databas införs.
 - JavaScriptfri navigation och samtliga kategorier fungerar. Kontakt/lista visar begripliga manuella instruktioner när skript saknas.
 - Generiska WebPage/WebSite-data beskriver synligt innehåll. Obekräftat Store-schema och platshållarkontakt tas bort i granskningspaketet. Titles, descriptions, canonical, sitemap och robotdirektiv är kontrollerade.
 - Alla typsnitt och webbresurser är lokala/systembaserade. Ingen analytik, externa fontanrop eller cookie-banner behövs i den nya versionen.
@@ -73,7 +73,7 @@ Bilderna är tydligt märkta som AI-illustrationer och föreställer inte egna l
 
 6. FAKTISKA TESTRESULTAT OCH VISUELL KONTROLL
 
-npm ci --ignore-scripts lyckades med låsta beroenden; paketkontrollen rapporterade 0 kända sårbarheter vid denna körning. npm run build lyckades: 11 HTML-sidor. Syntaxkontroller av byggkälla och sajt-JS lyckades. Slutlig npm test passerade samtliga 13 grupper i Chrome 155.0.8059.27:
+npm ci --ignore-scripts lyckades med låsta beroenden; paketkontrollen rapporterade 0 kända sårbarheter vid den ursprungliga körningen. npm run build lyckades: 11 HTML-sidor. Syntaxkontroller av byggkälla och sajt-JS lyckades. Slutlig npm test efter WhatsApp-ändringen passerade samtliga 15 grupper i Chrome 155.0.8059.27:
 1) Tio sid-URL:er, H1, språk, metadata, canonical, schema och bildladdning.
 2) 17 distinkta interna sökvägar inklusive query-länkar svarar 200.
 3) robots och sitemap med tio canonical-URL:er.
@@ -86,7 +86,9 @@ npm ci --ignore-scripts lyckades med låsta beroenden; paketkontrollen rapporter
 10) Endast lokala GET-anrop under funktionstesterna; inga externa leads eller webbläsarfel.
 11) Synlig navigation, kategorier och listinstruktioner utan JavaScript.
 12) Okända/privata sökvägar 404, POST 405, trailing-slash 301 i lokal preview.
-13) Release-allowlist och scan av 23 publika filer: inga käll-/docfiler, hemligheter eller platshållarnummer i public/.
+13) Release-allowlist och scan av 24 publika filer: inga käll-/docfiler, hemligheter eller platshållarnummer i public/.
+14) Alla WhatsApp-länkar på samtliga tio innehållssidor: godkänt nummer, sajt, canonical-sida och intresse; kategorikort anger rätt kategori. Inga WhatsApp-anrop görs i testen.
+15) WhatsApp-listflöde: kategori, djurslag, mängd, flera produkter, specialtecken och borttagna produkter. Testklick fångas lokalt utan att öppna WhatsApp eller skicka meddelanden.
 
 Två tidiga kontroller behövde rättas: Windows-urklipp använder CRLF och testet jämför nu normaliserade radslut; script-blockerat läge behövde en explicit synlig fallback i stället för enbart noscript. En visuell kontroll fångade också listpanelens desktop-grid, som korrigerades. Den slutliga testfilen är auktoritativ: docs/evidence/test-results.json. Den tidigare korrigerade testfelhistoriken finns separat och innebär inte en kvarstående fail.
 
@@ -110,13 +112,13 @@ PR:en lämnas som vanlig öppen PR, inte draft, till den verifierade defaultgren
 8. RANGORDNADE ÄGARBESLUT OCH PUBLICERINGSBEROENDEN
 
 1. Affärsrollen leadgenerering åt Agrovet är bekräftad. Identifiera juridiskt/operativt ansvarig och exakt mottagande verksamhet; godkänn kategoriernas faktiska omfattning.
-2. Godkänn exakt kontaktmottagare och telefon/WhatsApp. Inget nummer från live eller äldre recon betraktas som verifierat.
+2. WhatsApp-numret +595 992 279599 är godkänt av ägaren och infört. Verifiera framtida appöppning på staging och dokumentera juridisk operatör separat; numret behöver inte bekräftas på nytt.
 3. Ge läsande backend-/driftunderlag för Hostinger och verklig VenderCRM-integration. Backup och jämförelse krävs innan ett paket kan ersätta något i drift.
-4. Verifiera verkligt mottagarflöde på staging med testmottagare, inklusive validering, spam, same-origin/CSRF, loggar, fel och uppdaterad integritetstext.
+4. Direkt WhatsApp-flöde och uppdaterad integritetstext ingår nu. Ett eventuellt separat formulär/CRM-flöde ska senare verifieras på staging med testmottagare, inklusive validering, spam, same-origin/CSRF, loggar och fel.
 5. Bekräfta eventuell RUC, adress, tider, leverans, betalning, habiliteringar och verkliga kataloguppgifter. Publicera endast styrkta fakta.
 6. Godkänn copy och medicinska gränser. Behåll illustrativ bildmärkning eller ersätt med rättighetsklarerade riktiga foton.
 7. Besluta om indexering och separat publicering först efter ovanstående. Nu behålls noindex. Bevara URL:er, verkliga endpoints och rollback-möjlighet.
 
 DET SOM SAKNADES I UPPDRAGET OCH HUR DET LÖSTES
 
-Den faktiska livekoden, ursprungscommit, privat PHP/CRM-källa, affärsoperatör, godkänt nummer och katalogdata saknades. Jag löste det reversibla arbetet genom att spara live-referensen, identifiera båda repo-grenarnas verkliga innehåll, bygga en ny reproducerbar källa i separat checkout och förbereda en lokal produktlista. Ägarsvaret styrde versionen till leadgenerering åt Agrovet. Kontakt-/driftuppgifter kvarstår som publiceringsberoenden. Det förberedda paketet är komplett för granskning och ägarens merge; kontaktaktivering och drift kräver dessa uppgifter och ett nytt publiceringsuppdrag.
+Den faktiska livekoden, ursprungscommit, privat PHP/CRM-källa, affärsoperatör och katalogdata saknades. Jag sparade live-referensen, identifierade båda repo-grenarnas verkliga innehåll och byggde en ny reproducerbar källa i separat checkout. Ägarsvaren styrde versionen till leadgenerering åt Agrovet och godkände +595 992 279599 för direkt WhatsApp-kontakt. Alla meddelanden förifylls med källsajt och relevant sida/kategori/produkt. Det uppdaterade paketet är komplett för granskning och ägarens merge; faktisk publicering och eventuell CRM-integration kräver separat uppdrag. Higgsfield-förbrukningen är oförändrad.
